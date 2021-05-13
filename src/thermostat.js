@@ -9,6 +9,17 @@ class Thermostat {
     this.MAX_LIMIT_PSM_OFF = 32;
     this.DEFAULT_TEMPERATURE = 20;
     this.temperature = this.DEFAULT_TEMPERATURE;
+    this.MEDIUM_ENERGY_USAGE_LIMIT = 18;
+    this.HIGH_ENERGY_USAGE_LIMIT = 25;
+  }
+  energyUsage() {
+    if (this.temperature < this.MEDIUM_ENERGY_USAGE_LIMIT) {
+      return 'low-usage';
+    }
+    if (this.temperature <= this.HIGH_ENERGY_USAGE_LIMIT) {
+      return 'medium-usage';
+    }
+    return 'high-usage';
   }
   resetTemperature() {
     this.temperature = this.DEFAULT_TEMPERATURE;
