@@ -7,6 +7,11 @@ class Thermostat {
     this.powerSavingMode = true;
     this.MAX_LIMIT_PSM_ON = 25;
     this.MAX_LIMIT_PSM_OFF = 32;
+    this.DEFAULT_TEMPERATURE = 20;
+    this.temperature = this.DEFAULT_TEMPERATURE;
+  }
+  resetTemperature() {
+    this.temperature = this.DEFAULT_TEMPERATURE;
   }
   getCurrentTemperature() {
     return this.temperature;
