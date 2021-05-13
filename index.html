@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thermostat</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="src/interface.js"></script>
+    <script src="src/thermostat.js"></script>
+
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <!-- The weather reader:  -->
+        <div class="weather-cities"> 
+        <h1> Choose a city to find out the weather:
+        <select id="current-city"></h1>
+          <div class="drop-down" >
+            <option id="city" value="London">London</option>
+            <option id="city" value="New York">New York</option>
+            <option id="city" value="paris">Paris</option>
+            <option id="city" value="madrid">Madrid</option>
+            <option id="city" value="Prague">Prague</option>
+            <option id="city" value="Budapest">Budapest</option>
+            <option id="city" value="Sofia">Sofia</option>
+            <option id="city" value="Istanbul">Istanbul</option>
+            <option id="city" value="Los Angeles">Los Angeles</option>
+            <option id="city" value="Piatra Neamţ">Piatra Neamţ</option>
+            <option id="city" value="Maringa">Maringa</option>
+        </select>
+        
+        <h1>Current temperature <span id="city"></span> </span><span id="current-temperature"></span>° C</h1>
+      </section>
+    </div>
+  </div>
+      <!-- End of weather reader -->
+
+    <!-- Temperature control:  -->
+      <div class="thermo-changes">
+        <div class="temperature-buttons">
+            <i class="arrow up"id="temperature-up"></i>
+            <section>
+              <h1 id="temperature"></h1>
+              <section>
+            <i class="arrow down" id="temperature-down"></i>
+        </div>
+
+          <button class="button" id="temperature-reset">Reset</button>
+        <div class="power-saving-mode">
+        Power saving mode
+        <span class="status-psm" id="power-saving-status">on</span>
+      </div>
+        <button class="button" id="powersaving-on">PSM on</button>
+        <button class="button" id="powersaving-off">PSM off</button>
+
+    </section>
+  </div>
+  </body>
+</html>

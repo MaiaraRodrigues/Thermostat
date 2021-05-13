@@ -19,7 +19,7 @@ class Thermostat {
     if (this.temperature <= this.HIGH_ENERGY_USAGE_LIMIT) {
       return 'medium-usage';
     }
-    return 'high-usage';
+      return 'high-usage';
   }
   resetTemperature() {
     this.temperature = this.DEFAULT_TEMPERATURE;
